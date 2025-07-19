@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Robot Arm Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Robot Arm Control Panel</h2>
+
+  <div id="sliders">
+    <div>Motor 1: <input type="range" min="0" max="180" value="90" id="motor1"> <span id="val1">90</span></div>
+    <div>Motor 2: <input type="range" min="0" max="180" value="90" id="motor2"> <span id="val2">90</span></div>
+    <div>Motor 3: <input type="range" min="0" max="180" value="90" id="motor3"> <span id="val3">90</span></div>
+    <div>Motor 4: <input type="range" min="0" max="180" value="90" id="motor4"> <span id="val4">90</span></div>
+    <div>Motor 5: <input type="range" min="0" max="180" value="90" id="motor5"> <span id="val5">90</span></div>
+    <div>Motor 6: <input type="range" min="0" max="180" value="90" id="motor6"> <span id="val6">90</span></div>
+  </div>
+
+  <button onclick="reset()">Reset</button>
+  <button onclick="savePose()">Save Pose</button>
+  <button onclick="runCurrentPose()">Run</button>
+
+  <div id="poses"></div>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
